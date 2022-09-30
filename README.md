@@ -4,7 +4,7 @@
 Follow the README below to get started!
 
 
-## Note : This repo is excluded from the Hacktoberfest but you can still contribute and the reason is importance of DSA, yourcontribution will be for lifelong.
+## Note : This repo is included in the Hacktoberfest2022, your contribution will be for lifelong.
 
 
 
