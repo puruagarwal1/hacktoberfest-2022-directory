@@ -1,14 +1,14 @@
-# Hacktoberfest 2021
+# Hacktoberfest 2022
 
 
 
 ![image](https://github.com/the-hack3rboy/Hacktoberfest-2021/blob/main/Hacktoberfest%20Logo.png)
 <div align="center">
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/the-hack3rboy/Hacktoberfest-2021) 
-[![Open Source Love](https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green)](https://github.com/the-hack3rboy/Hacktoberfest-2021) 
-[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3)](https://github.com/the-hack3rboy/Hacktoberfest-2021)
-[![Hacktoberfest-21](https://img.shields.io/static/v1.svg?label=Hacktoberfest-21&message=accepted&color=red)](https://github.com/the-hack3rboy/Hacktoberfest-2021)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/puruagarwal1/hacktoberfest-2022-directory) 
+[![Open Source Love](https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green)](https://github.com/puruagarwal1/hacktoberfest-2022-directory) 
+[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3)](https://github.com/puruagarwal1/hacktoberfest-2022-directory)
+[![Hacktoberfest-21](https://img.shields.io/static/v1.svg?label=Hacktoberfest-21&message=accepted&color=red)](https://github.com/puruagarwal1/hacktoberfest-2022-directory)
 </div>
 
 
@@ -25,7 +25,7 @@
 
 3. Add algorithms in desired algorithm in specified folder(create new folders as per your requirement). Anything goes, from android to ML to anything you like.
    
-4. Send a [Pull request](https://github.com/the-hack3rboy/Hacktoberfest-2021/pulls)
+4. Send a [Pull request](https://github.com/puruagarwal1/hacktoberfest-2022-directory/pulls)
 
 5. I'll take a look at change and then merge them with master branch.
 
