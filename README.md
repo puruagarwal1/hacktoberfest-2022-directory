@@ -15,7 +15,7 @@ Follow the README below to get started!
 
 ## Getting Started
 
-Before you begin, please follow my other [account](https://github.com/Aditya664) and contribute to projects over there.
+Before you begin, please follow my other [account](https://github.com/puruagarwal1) and contribute to projects over there.
 
 ## The Process
 
