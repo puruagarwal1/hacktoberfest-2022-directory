@@ -19,6 +19,7 @@ int main()
     ci = principal * ((pow((1 + rate / 100), year) - 1));
 
     printf("Compound interest is: %f\n", ci);
-
+printf("Total amount payable is: %f\n", ci+principal);
+    
     return 0;
 }
