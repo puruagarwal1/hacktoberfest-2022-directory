@@ -1,10 +1,11 @@
 #include<stdio.h>
-
 #include<stdlib.h>
  
 #define Size 4 
  
-int Top=-1, inp_array[Size];
+int Top=-1;
+int inp_array[Size];
+
 void Push();
  
 int main()
@@ -32,29 +33,31 @@ int main()
 		}
 	}
 }
- 
+
+// Function to push an element into a Stack
 void Push()
 {
 	int x;
 	
 	if(Top==Size-1)
 	{
-		printf("\nOverflow!!");
+		printf("\nStack Overflow!!");
 	}
 	else
 	{
 		printf("\nEnter element to be inserted to the stack:");
 		scanf("%d",&x);
+		inp_array[Top + 1]=x
 		Top=Top+1;
-		inp_array[Top]=x;
 	}
 }
- 
+
+// Function to pop an element from Stack
 void Pop()
 {
 	if(Top==-1)
 	{
-		printf("\nUnderflow!!");
+		printf("\nStack Underflow!!");
 	}
 	else
 	{
@@ -63,13 +66,14 @@ void Pop()
 	}
 }
  
+ // Function to print all elements present in the Stack
 void show()
 {
 	
 	
 	if(Top==-1)
 	{
-		printf("\nUnderflow!!");
+		printf("\nStack Underflow!!");
 	}
 	else
 	{
