@@ -1,0 +1,12 @@
+#include<studio.h>
+#include<math.h>
+int main () {
+        float height,weight,bmi;
+printf ("Enter your weight in Kg");
+scanf ("%f", &weight);
+printf ("Enter your Height in meters");
+scanf("%f", &height);
+bmi= weight /(height*height);
+printf ("Your BMI is = %f", bmi);
+
+}
