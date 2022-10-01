@@ -1,8 +1,7 @@
 # Hacktoberfest 2022
 
 
-
-![image](https://github.com/the-hack3rboy/Hacktoberfest-2021/blob/main/Hacktoberfest%20Logo.png)
+![image](https://pbs.twimg.com/profile_banners/1040669393255055360/1662652901/1500x500)
 <div align="center">
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/puruagarwal1/hacktoberfest-2022-directory) 
@@ -38,9 +37,9 @@ Don't worry newcomers!! Everyone's PRs will be merged,just follow the steps prop
 All of your suggestions are welcome!!
 
 
-# 📌Some tips to add your algorithm in the repository: ✨
-1. Check if your code is already present the library.
+# 📌 Some tips to add your algorithm in the repository: ✨
+1. Check if your code is already present in the library.
 2. If it is present then please don't add your code. If you could make the existing code better, then go ahead.
-3. Follow the <a href = "https://en.wikipedia.org/wiki/Camel_case">camelCase </a> naming convention for source files.
-4. If you want to make a folder, please keep the first letter of the folder name capital.
+3. Follow the camelCase naming convention for source files.
+4. If you want to make a folder, please keep the first letter of the folder name capitalised.
 5. Add your code to the proper folder.
