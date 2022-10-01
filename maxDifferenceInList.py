@@ -1,0 +1,6 @@
+n = int(input("Enter the number of elements in a list: "))
+print("Enter the elements in a line separated by space: ")
+l = list(map(int, input().split()))
+minNum = min(l)
+maxNum = max(l)
+print("Maximum Difference between 2 elements in the given list is",abs(maxNum-minNum))
