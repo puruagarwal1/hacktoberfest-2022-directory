@@ -1,44 +1,56 @@
 
-// C++ program to implement recursive Binary Search
-#include <bits/stdc++.h>
-using namespace std;
- 
-// A recursive binary search function. It returns
-// location of x in given array arr[l..r] is present,
-// otherwise -1
-int binarySearch(int arr[], int l, int r, int x)
-{
-    if (r >= l) {
-        int mid = l + (r - l) / 2;
- 
-        // If the element is present at the middle
-        // itself
-        if (arr[mid] == x)
-            return mid;
- 
-        // If element is smaller than mid, then
-        // it can only be present in left subarray
-        if (arr[mid] > x)
-            return binarySearch(arr, l, mid - 1, x);
- 
-        // Else the element can only be present
-        // in right subarray
-        return binarySearch(arr, mid + 1, r, x);
-    }
- 
-    // We reach here when element is not
-    // present in array
-    return -1;
-}
- 
-int main(void)
-{
-    int arr[] = { 2, 3, 4, 10, 40 };
-    int x = 10;
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int result = binarySearch(arr, 0, n - 1, x);
-    (result == -1)
-        ? cout << "Element is not present in array"
-        : cout << "Element is present at index " << result;
-    return 0;
-}
+// C++ program to implement Binary Search
+#include <iostream>  
+#include <conio.h>  
+using namespace std;  
+int main ()  
+{  
+    // declaration of the variables and array  
+    int arr[100], st, mid, end, i, num, tgt;  
+      
+    cout << " Define the size of the array: " << endl;  
+    cin >> num; // get size  
+      
+    // enter only sorted array  
+        cout << " Enter the values in sorted array either ascending or descending order: " << endl;  
+    // use for loop to iterate values  
+    for (i = 0; i < num; i++)  
+    {  
+        cout << " arr [" << i << "] = ";  
+        cin >> arr[i];  
+    }  
+      
+    // initialize the starting and ending variable's values  
+    st = 0;  
+    end = num - 1; // size of array (num) - 1  
+      
+    // define the item or value to be search  
+    cout << " Define a value to be searched from sorted array: " << endl;  
+    cin >> tgt;  
+      
+    // use while loop to check 'st', should be less than equal to 'end'.  
+    while ( st <= end)  
+    {  
+        // get middle value by splitting into half  
+        mid = ( st + end ) / 2;  
+        /* if we get the target value at mid index, print the position and exit from the program. */  
+        if (arr[mid] == tgt)  
+        {  
+            cout << " Element is found at index " << (mid + 1);  
+            exit (0); // use for exit program the program  
+        }  
+        // check the value of target element is greater than the mid element' value  
+        else if ( tgt > arr[mid])  
+        {  
+            st = mid + 1; // set the new value for st variable  
+        }  
+          
+        // check the value of target element is less than the mid element' value  
+        else if ( tgt < arr[mid])  
+        {  
+            end = mid - 1; // set the new value for end variable  
+        }  
+    }  
+    cout << " Number is not found. " << endl;  
+    return 0;  
+}   
