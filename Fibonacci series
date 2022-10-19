@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int MAX = 1000;
+int findPosition(int k, int n)
+{
+   unsigned long long int f1 = 0, f2 = 1, f3;
+    for (int i = 2; i <= MAX; i++) {
+        f3 = f1 + f2;
+        f1 = f2;
+        f2 = f3;
+ if (f2 % k == 0)
+   return n * i;
+    }
+}
+int main()
+{
+    int n = 5, k = 4;
+    cout << "Position of n'th multiple of k"
+         << " in Fibonacci Series is "
+         << findPosition(k, n) << endl;
+    return 0;
+}
