@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommendation System</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/static/styles/main_page.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8cab6fe611.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img src="/static/Images/Movie_logo-removebg-preview.png" class="logo" />
+    <p>Search your desired movie here</p>
+    <div class="header">
+      <form action="{{url_for('search_movies')}}">
+        <h1>Search Movie Here</h1>
+        <div class="form-box">
+          <input
+            type="text"
+            class="search"
+            name="movie"
+            placeholder="Search..."
+          />
+          <button class="search-button" target="_blank" type="submit">
+            Search
+          </button>
+        </div>
+      </form>
+    </div>
+    {{movie}}
+    <div class="social-media">
+      <a
+        href="https://github.com/Jpduker/Movie-Recommendation-Engine"
+        target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Movies list</title>
+    <link rel="stylesheet" href="/static/styles/movie_list.css" />
+  </head>
+  <body>
+    {%if s == 'opps'%}
+    <div
+      class="choice"
+      style="
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      "
+    >
+      <h4>{{movie}}</h4>
+      <h4>Please search another movie.</h4>
+    </div>
+
+    {%else%}
+    <div class="neon">
+      <h4 class="choice">{{movie[0]}}!!!</h4>
+      <h4 class="amazing_choice">Amazing Choice</h4>
+    </div>
+
+    <div class="typewriter">
+      <p>{{movie[1]}}</p>
+      <p>{{movie[2]}}</p>
+      <p>{{movie[3]}}</p>
+      <p>{{movie[4]}}</p>
+      <p>{{movie[5]}}</p>
+      <p>{{movie[6]}}</p>
+      <p>{{movie[7]}}</p>
+      <p>{{movie[8]}}</p>
+      <p>{{movie[9]}}</p>
+      <p>{{movie[10]}}</p>
+      <p>{{movie[11]}}</p>
+      <p>{{movie[12]}}</p>
+      <p>{{movie[13]}}</p>
+      <p>{{movie[14]}}</p>
+      <p>{{movie[15]}}</p>
+    </div>
+    {%endif%}
+  </body>
+</html>
