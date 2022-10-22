@@ -1,0 +1,55 @@
+class Solution
+{
+    static int NumberOfTurns(Node root, int first, int second)
+    {
+        //your code here
+        Node rt=find(root,first,second);
+        int[] a=new int[1];
+        count(rt,0,first,'A',a);
+        int ans1=a[0];
+        a[0]=0;
+        count(rt,0,second,'A',a);
+        return ans1+a[0]-1;
+    }
+    public static void count(Node root,int cnt,int f,char prev,int[] a)
+    {
+        if(root==null) return;
+        if(root.data==f)
+        {
+            a[0]=cnt;
+            return;
+        }
+        if(prev!='L')
+        {
+            if(a[0]==0)
+            count(root.left,cnt+1,f,'L',a);
+        }
+        else if(prev=='L')
+        {
+            if(a[0]==0)
+            count(root.left,cnt,f,'L',a);
+        }
+        
+        
+        if(prev!='R')
+        {
+            if(a[0]==0)
+            count(root.right,cnt+1,f,'R',a);
+        }
+        else if(prev=='R')
+        {
+            if(a[0]==0)
+            count(root.right,cnt,f,'R',a);
+        }
+    }
+    public static Node find(Node root,int f,int s)
+    {
+        if(root==null) return null;
+        if(root.data==f || root.data==s) return root;
+        Node l1=find(root.left,f,s);
+        Node l2=find(root.right,f,s);
+        if(l1!=null && l2!=null) return root;
+        else if(l1!=null) return l1;
+        else return l2;
+    }
+}
